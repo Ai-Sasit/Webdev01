@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "First App NodeJS",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "App"
+  ],
+  "author": "Aizz",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^14.14.14",
+    "axios": "^0.21.0",
+    "readline": "^1.3.0"
+  }
+}

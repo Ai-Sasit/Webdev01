@@ -1,0 +1,14 @@
+{
+  "name": "node01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node01"
+  ],
+  "author": "Ai-Sasit",
+  "license": "ISC"
+}

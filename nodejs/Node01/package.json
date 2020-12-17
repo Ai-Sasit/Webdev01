@@ -4,11 +4,16 @@
   "description": "",
   "main": "nodeserver.js",
   "scripts": {
+    "start": "node nodeserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Node01"
   ],
   "author": "Ai-Sasit",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.6"
+  }
 }

@@ -1,5 +1,4 @@
-import "./Product.css";
-
+import {Link} from 'react-router-dom';
 function Product(props) {
   return (
     <div className="product">
@@ -9,7 +8,7 @@ function Product(props) {
         alt="product"
       />
       <div className="product-name">
-        <a href="product.html">{props.element.name}</a>
+        <Link to={`/product/${props.element._id}`}>{props.element.name}</Link>
       </div>
       <div className="product-brand">{props.element.brand}</div>
       <div className="product-price">${props.element.price}</div>

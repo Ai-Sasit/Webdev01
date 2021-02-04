@@ -1,4 +1,3 @@
-import "./Product.css";
 function aside(props){
     return (
         <aside className="sidebar">

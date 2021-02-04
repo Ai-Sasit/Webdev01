@@ -1,24 +1,29 @@
 import "./App.css";
-import Product from "./components/Product.js";
+import {BrowserRouter,Route,Switch} from "react-router-dom";
 import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 import Aside from "./components/aside.js";
-import data from "./data.js";
+import Home from "./pages/home.js";
+import ProductInfo from "./pages/product-info.js";
 
 function App() {
 
   return (
+    <BrowserRouter>
     <div className="grid-container">
       <Header />
       <Aside />
       <main className="main">
         <div className="content">
-          <ul className="products">
-            {data.Product.map((e) => (<li><Product element={e} /></li>))};
-          </ul>
+        <Switch>
+          <Route path="/" exact={true} component={Home}/>
+          <Route path="/Product/:id" component={ProductInfo}/>
+        </Switch>
         </div>
       </main>
-      <footer className="footer">All right reserved.</footer>
+      <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 
